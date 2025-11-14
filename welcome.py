@@ -1,6 +1,8 @@
 import streamlit as st
+from analytics import log_visit
 
 st.set_page_config(page_title="DNA의 정원: 생명의 코드 수집기록", page_icon="📰", layout="wide")
+log_visit("홈")
 
 # ─────────────────────────────
 # 헤더

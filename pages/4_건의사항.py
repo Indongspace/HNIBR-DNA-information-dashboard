@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
+from analytics import log_visit
 
 # Streamlit Multi-page App Configuration (Optional, but good practice)
 st.set_page_config(
@@ -9,7 +10,7 @@ st.set_page_config(
     page_icon="📝",
     layout="wide",
 )
-
+log_visit("건의사항")
 # ==========================================================
 # 세션 상태 및 프론트엔드 유틸리티 함수
 # ==========================================================

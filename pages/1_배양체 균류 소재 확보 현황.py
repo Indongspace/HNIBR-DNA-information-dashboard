@@ -3,8 +3,11 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 from pathlib import Path
+from analytics import log_visit
 
 st.set_page_config(page_title="배양체 균류 소재 확보 현황(국명·학명 집계)", layout="wide")
+log_visit("배양체 균류 소재 확보 현황(국명·학명 집계)")
+
 st.title("국립호남권생물자원관 배양체 균류 소재 확보 현황 · 국명/학명 집계")
 
 # -----------------------------

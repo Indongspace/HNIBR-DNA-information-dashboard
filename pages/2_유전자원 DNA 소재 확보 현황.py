@@ -3,8 +3,11 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 from pathlib import Path
+from analytics import log_visit
 
 st.set_page_config(page_title="유전자원 DNA 소재 확보 현황(분류군·국명·학명 집계)", layout="wide")
+log_visit("유전자원 DNA 소재 확보 현황(분류군·국명·학명 집계)")
+
 st.title("국립호남권생물자원관 유전자원 DNA 소재 확보 현황 · 분류군/국명/학명 집계")
 
 # -----------------------------
